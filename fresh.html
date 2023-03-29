@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Forecast</title>
+</head>
+<body>
+	<h1>3-Day Weather Forecast for Carlsbad, California</h1>
+	<div id="forecast"></div>
+
+	<script>
+		// Fetch data from API
+		fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Carlsbad%20California?unitGroup=us&key=UYSFHQEU8URG8UDVFGUJKSWN3&contentType=json")
+			.then(response => response.json())
+			.then(data => {
+				// Extract relevant weather data
+				const forecast = data.days.slice(0, 3).map(day => ({
+					date: day.datetimeStr,
+					temp: day.temp,
+					conditions: day.conditions,
+					icon: `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${day.icon}.svg`
+				}));
+
+				// Create HTML markup for forecast
+				const forecastMarkup = forecast.map(day => `
+					<div>
+						<h2>${day.date}</h2>
+						<img src="${day.icon}" alt="Weather icon">
+						<p>Conditions: ${day.conditions}</p>
+						<p>Temperature: ${day.temp}&deg;F</p>
+					</div>
+				`).join("");
+
+				// Display forecast on page
+				document.getElementById("forecast").innerHTML = forecastMarkup;
+			})
+			.catch(error => console.log(error));
+	</script>
+</body>
+</html>
