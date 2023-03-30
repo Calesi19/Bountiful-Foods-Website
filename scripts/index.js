@@ -1,7 +1,7 @@
 //Update Date
 const date = new Date();
 
-document.getElementById("footer-copyright").innerHTML = "&copy; " + date.getFullYear() + " Mountain View Chamber"
+document.getElementById("footer-copyright").innerHTML = "&copy; " + date.getFullYear() + " Bountiful Foods"
 document.getElementById("last-modified").innerHTML = "Last Modified: " + date.toUTCString()
 
 

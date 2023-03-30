@@ -136,6 +136,7 @@ footer {
     background-color: rgb(203, 223, 189);
     padding-bottom: 0;
     font-size: 14pt;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.3);
 }
 
 .footer-top {
@@ -307,12 +308,19 @@ main.home .spotlights {
     width: 25%;
 }
 
+main.home #schedule {
+    background-color: rgb(218, 163, 163);
+}
 
 
 
 
-#social {
+main.home #social {
+
+    background-color: rgb(56, 119, 99);
     justify-content: space-between;
+    align-items: center;
+
 }
 
 .hashtags {
@@ -330,7 +338,6 @@ main.home .spotlights {
   }
 
 
-
 td {
     text-align: center;
 }
@@ -342,6 +349,62 @@ td {
 
 
 
+
+
+
+/* ABOUT US */
+
+main.about-us .hero {
+    background-color: rgb(200, 210, 146);
+    display: flex;
+    margin: 20px;
+    padding: 30px;
+    align-items: center;
+}
+
+main.about-us .hero img {
+    width: 30%;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+main.about-us .hero img:hover {
+    transform: translateY(-2px); 
+}
+
+
+main.about-us #call-to-action {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    padding-left: 6%;
+    padding-right: 8%;
+    gap: 10px;
+}
+
+main.about-us button {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(164, 74, 63);
+    padding: 20px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    transition: 0.7s ease;
+}
+
+main.about-us button:hover {
+    color: rgb(164, 74, 63);
+    background-color: white;
+}
+
+
+
+main.about-us .location {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 
@@ -439,8 +502,40 @@ td {
     }
 
     main.home .spotlights {
-        margin-top: 350px;
+        margin-top: 320px;
     }
+
+    main.home .hero img {
+        position: absolute;
+        right: 0px;
+        width: 100%;
+    }
+
+
+
+    main.home #spotlights {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    main.home #weather {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    main.home #social {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .hashtags {
+        font-size: 8vmin;
+    }
+
+
+
 
 
 
@@ -470,7 +565,9 @@ td {
         gap: 0;
         flex-direction: column;
         background-color: rgb(241, 156, 121);
-        width: 98%;
+        width: 93.8%;
+        margin-left: 4px;
+        margin-right: 4px;
         text-align: center;
         transition: 0.0s;
     }
@@ -481,7 +578,11 @@ td {
 
     .nav-menu.active{
         left: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
+
+    
 
     /* Hamburger Menu */
 
@@ -508,9 +609,27 @@ td {
         width: 100%;
     }
 
-    main.home .spotlights {
-        margin-top: 60%;
+    main.home #spotlights {
+        background-color: aqua;
+        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
     }
+
+    main.home #spotlights {
+        background-color: aqua;
+        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    .hashtags {
+        font-size: 9vmin;
+    }
+
+    
 
 
 
