@@ -59,80 +59,126 @@
 
 <main class="fresh">
 
+    <div id="smoothies">
+
+   <div id="order-form">
+
+
    
-    <h1>Smoothie Order Form</h1>
-	<form action="#" method="post" id="fruit-selection">
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required><br><br>
-
-		<label for="fruits">Select up to three fruits:</label><br>
-		<input type="checkbox" id="banana" name="fruit[]" value="banana">
-		<label for="banana">Banana</label><br>
-
-		<input type="checkbox" id="strawberry" name="fruit[]" value="strawberry">
-		<label for="strawberry">Strawberry</label><br>
-
-		<input type="checkbox" id="blueberry" name="fruit[]" value="blueberry">
-		<label for="blueberry">Blueberry</label><br>
-
-		<input type="checkbox" id="mango" name="fruit[]" value="mango">
-		<label for="mango">Mango</label><br><br>
-
-		<input type="submit" value="Submit">
-	</form>
-
-
-
-
-	<form>
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required><br>
-  
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required><br>
-  
-		<label for="phone">Phone:</label>
-		<input type="tel" id="phone" name="phone" required><br>
-  
-		<label for="fruit1">Fruit 1:</label>
-		<select id="fruit1" name="fruit1">
-		  <option value="apple">Apple</option>
-		  <option value="banana">Banana</option>
-		  <option value="orange">Orange</option>
-		  <option value="strawberry">Strawberry</option>
-		  <option value="blueberry">Blueberry</option>
-		  <option value="kiwi">Kiwi</option>
-		</select><br>
-  
-		<label for="fruit2">Fruit 2:</label>
-		<select id="fruit2" name="fruit2">
-		  <option value="">--None--</option>
-		  <option value="apple">Apple</option>
-		  <option value="banana">Banana</option>
-		  <option value="orange">Orange</option>
-		  <option value="strawberry">Strawberry</option>
-		  <option value="blueberry">Blueberry</option>
-		  <option value="kiwi">Kiwi</option>
-		</select><br>
-  
-		<label for="fruit3">Fruit 3:</label>
-		<select id="fruit3" name="fruit3">
-		  <option value="">--None--</option>
-		  <option value="apple">Apple</option>
-		  <option value="banana">Banana</option>
-		  <option value="orange">Orange</option>
-		  <option value="strawberry">Strawberry</option>
-		  <option value="blueberry">Blueberry</option>
-		  <option value="kiwi">Kiwi</option>
-		</select><br>
-  
-		<input type="submit" value="Order">
-	  </form>
+    <h2>Smoothie Order</h2>
 	
 
+	<form id="order-content">
+
+        <div id="customer-info">
+        <div class="title">
+            Customer Info:
+        </div>
+
+        <div>
+            <label for="name">Name:</label><br>
+		    <input type="text" id="name" name="name" required><br>
+        </div>
+
+		
+        <div>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+        </div>
+
+    </div>
+
+    <div id="flavors">
+        
+        <div class="title">
+            Select up to three fruits for your smoothie:
+        </div>
+
+		<label for="fruit1">Fruit 1:</label><br>
+		<select id="fruit1" name="fruit1">
+		  
+		</select><br>
+  
+		<label for="fruit2">Fruit 2:</label><br>
+		<select id="fruit2" name="fruit2">
+		  <option value="">--None--</option>
+		  
+		</select><br>
+  
+		<label for="fruit3">Fruit 3:</label><br>
+		<select id="fruit3" name="fruit3">
+		  <option value="">--None--</option>
+		  
+		</select><br>
+
+    </div>
+
+        <div id="smoothie-base">
+
+            <div class="title">
+                Select a base for your smoothie:
+            </div>           
+
+            <label>
+                <input type="radio" name="beverage" value="milk">
+                Milk
+            </label>
+              
+            <label>
+                <input type="radio" name="beverage" value="water">
+                Water
+            </label>
+        </div>
+
+        
+        <div id="ice-option">
+
+            <div class="title">
+                Add ice to your smoothie:
+            </div>
+            
+
+            <label>
+                <input type="radio" name="ice" value="ice">
+                Ice
+              </label>
+              
+              <label>
+                <input type="radio" name="ice" value="no-ice">
+                No ice
+              </label>
+
+        </div>
+          
+          
+          
+          
+		<input id="order-submit" class="button" type="submit" value="Submit Order">
+	  
+    
+    </form>
+	
+    </div>
+
+    <div id="smoothie-prices">
+        <img src="images/smoothie-making.jpeg" alt="Person making smoothies">
+    </div>
+
+</div>
 
 
 
+
+    <div id="store">
+
+        <img src="images/store.jpeg" alt="">
+
+        <div class="tile-text">
+            <h2>Find more at our store.</h2>
+            When you shop at our storefront in Carlsbad, you'll find a wide selection of delicious, locally grown produce that's sure to satisfy. And if you're looking for a quick and easy way to get your daily dose of fruits and veggies, be sure to check out our pre-packaged fruit bags, perfect for smoothies and other tasty treats. Come visit us at Bountiful Foods and taste the difference that locally grown, organic produce can make in your diet!
+        </div>
+
+    </div>
     
 
 

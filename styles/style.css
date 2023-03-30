@@ -53,6 +53,11 @@ nav li {
     font-size: 2.7vmin;
 }
 
+.title {
+    font-size: large;
+    font-weight: bold;
+}
+
 
 nav{
     min-height: 60px;
@@ -263,6 +268,27 @@ main.home button:hover {
 }
 
 
+
+
+.button {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(164, 74, 63);
+    padding: 300px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    transition: 0.7s ease;
+}
+
+.button:hover {
+    color: rgb(164, 74, 63);
+    background-color: white;
+}
+
+
+
+
 main.home .spotlights {
     width: auto;
     display: flex;
@@ -317,11 +343,13 @@ main.home #schedule {
 
 main.home #social {
 
-    background-color: rgb(56, 119, 99);
+    background-color: rgb(139, 198, 179);
     justify-content: space-between;
     align-items: center;
 
 }
+
+
 
 .hashtags {
   display: block;
@@ -334,7 +362,7 @@ main.home #social {
 }
 
 #social #username{
-    color: rgb(120, 55, 46);
+    color: rgb(160, 44, 120);
   }
 
 
@@ -412,9 +440,85 @@ main.about-us .location {
 
 
 
+/* FRESH */
 
+main.fresh {
+    justify-content: center;
+}
 
+main.fresh #smoothie-prices {
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    background-color: blue;
+}
 
+main.fresh #smoothie-prices img {
+    width: 100%;
+    background-color: blue;
+}
+
+main.fresh #order-form {
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#order-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} 
+
+#order-content {
+    justify-content: space-between;
+}
+
+main.fresh input {
+    padding: 8px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+#customer-info input {
+    width: 30%;
+}
+
+#flavors, #smoothie-base, #ice-option, #order-submit {
+    margin-top: 20px ;
+}
+
+main.fresh select {
+    background-color: rgb(203, 223, 189);
+    padding: 8px;
+    width: 50%;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+main.fresh #smoothies {
+    display: flex;
+}
+
+main.fresh #store {
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+main.fresh .tile-text {
+    padding: 40px;
+}
+
+main.fresh #store img {
+    width: 50%;
+}
 
 
 
