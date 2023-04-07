@@ -828,6 +828,34 @@ main.fresh table td {
     
 
     
+
+
+
+
+    /* FRESH */
+
+    main, html, body {
+        width: 100%;
+    }
+
+    #store {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+    #store-image{
+        width: 10px;
+    }
+
+    .fresh #smoothies {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fresh form {
+        width: auto;
+    }
     
     
 
