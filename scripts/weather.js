@@ -47,16 +47,79 @@ fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/service
     icon: `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${day.icon}.svg`
   }));
 
+  let day = data.days[0];
+  let date = new Date();
+
+  const forecast1 = {
+    date: (date.getDate() + 1) % 7 ,
+    temp: day.temp,
+    conditions: day.conditions,
+    icon: `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${day.icon}.svg`
+  };
+
+
+
+  day = data.days[1];
+  
+  const forecast2 = {
+    date: (date.getDate()) % 7,
+    temp: day.temp,
+    conditions: day.conditions,
+    icon: `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${day.icon}.svg`
+  };
+
+
+
+  day = data.days[2];
+  
+  const forecast3 = {
+    date: (date.getDate() + 1) % 7,
+    temp: day.temp,
+    conditions: day.conditions,
+    icon: `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${day.icon}.svg`
+  };
+
+
+
+
+const today = new Date()
+// to return the date number(1-31) for the specified date
+console.log("today => ",today)
+let tomorrow =  new Date()
+tomorrow.setDate(today.getDate() + 1)
+
+let afterTomorrow =  new Date()
+tomorrow.setDate(today.getDate() + 2)
+
+let afterAfterTomorrow =  new Date()
+tomorrow.setDate(today.getDate() + 3)
+
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
   // Create HTML markup for forecast
-  const forecastMarkup = forecast.map(day => `
+  const forecastMarkup = `
     <div>
-      <h2>${day.date}</h2>
-      <img src="${day.icon}" alt="Weather icon">
-      <p>${day.temp}&deg;F</p>
-      <p>${day.conditions}</p>
+      <h2>Tomorrow</h2>
+      <img src="${forecast1.icon}" alt="Weather icon">
+      <p>${forecast1.temp}&deg;F</p>
+      <p>${forecast1.conditions}</p>
       
     </div>
-  `).join("");
+    <div>
+    <h2>${weekday[forecast2.date]}</h2>
+    <img src="${forecast2.icon}" alt="Weather icon">
+    <p>${forecast2.temp}&deg;F</p>
+    <p>${forecast2.conditions}</p>
+    
+  </div>
+  <div>
+  <h2>${weekday[forecast3.date]}</h2>
+  <img src="${forecast3.icon}" alt="Weather icon">
+  <p>${forecast3.temp}&deg;F</p>
+  <p>${forecast3.conditions}</p>
+  
+</div>
+  `;
 
   // Display forecast on page
   document.getElementById("forecast").innerHTML = forecastMarkup;
