@@ -771,14 +771,12 @@ main.fresh table td {
     }
 
     main.home #spotlights {
-        background-color: aqua;
         margin-top: 300px;
         display: flex;
         flex-direction: column;
     }
 
     main.home #spotlights {
-        background-color: aqua;
         margin-top: 300px;
         display: flex;
         flex-direction: column;
@@ -855,6 +853,26 @@ main.fresh table td {
 
     .fresh form {
         width: auto;
+    }
+
+    /* ABOUT US */ 
+
+    .location, .about-us{
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #history-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #history-section img {
+        width: 70%;
     }
     
     
