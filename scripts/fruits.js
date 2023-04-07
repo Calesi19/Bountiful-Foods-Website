@@ -27,14 +27,12 @@ fetch(url)
 
 
 
-
-
-
-
-
-
 const form = document.getElementById("order-content");
 const orderInfo = document.getElementById("order-info");
+
+const orderForm = document.getElementById('order-form');
+const orderCount = localStorage.getItem('orderCount') || 0;
+
 
 form.addEventListener("submit", function(event) {
   event.preventDefault(); // prevent form submission from refreshing the page
@@ -130,6 +128,10 @@ form.addEventListener("submit", function(event) {
 
     })
     .catch(error => console.log(error));
+
+    event.preventDefault();
+    localStorage.setItem('orderCount', Number(orderCount) + 1);
+    alert(`Order submitted! You have submitted ${Number(orderCount) + 1} orders so far.`);
 
 
 });

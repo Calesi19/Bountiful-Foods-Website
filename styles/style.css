@@ -378,7 +378,11 @@ td {
     text-align: center;
 }
 
-
+#order-count {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(194, 144, 144);
+}
 
 
 

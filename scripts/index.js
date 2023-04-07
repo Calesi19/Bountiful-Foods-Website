@@ -34,3 +34,7 @@ image.addEventListener("mouseout", function() {
 });
 
 
+
+
+
+document.getElementById('order-count').innerHTML = "You have ordered " + localStorage.getItem('orderCount') + " smoothies so far.";
