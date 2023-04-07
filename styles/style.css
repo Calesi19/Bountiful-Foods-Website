@@ -547,6 +547,34 @@ main.fresh #store img {
 
 
 
+.user-order {
+    background-color: rgb(212, 224, 155);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.order-info {
+
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main.fresh table {
+    background-color: rgb(200, 210, 146);
+    padding: 10px;
+}
+
+main.fresh table td {
+    border-style: solid;
+    padding: 9px;
+
+}
+
+
 
 
 
