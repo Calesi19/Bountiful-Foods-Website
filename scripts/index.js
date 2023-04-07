@@ -21,7 +21,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 
-
+/*
 //Social Media Icons
 var image = document.querySelector('.instagram');
 
@@ -32,7 +32,7 @@ image.addEventListener("mouseover", function() {
 image.addEventListener("mouseout", function() {
   this.src = "/images/instagram.png";
 });
-
+*/
 
 
 if (localStorage.getItem('orderCount')) {
