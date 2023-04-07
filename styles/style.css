@@ -547,15 +547,15 @@ main.fresh #store img {
 
 
 
-.user-order {
+#user-order {
     background-color: rgb(212, 224, 155);
     padding: 20px;
     margin: 10px;
-    display: flex;
+    display: none;
     justify-content: space-around;
 }
 
-.order-info {
+#order-info {
 
     
     display: flex;
