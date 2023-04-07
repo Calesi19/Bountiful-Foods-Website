@@ -36,5 +36,10 @@ image.addEventListener("mouseout", function() {
 
 
 
+if (localStorage.getItem('orderCount')) {
+  document.getElementById('order-count').innerHTML = "You have ordered " + localStorage.getItem('orderCount') + " smoothies so far.";
+}
 
-document.getElementById('order-count').innerHTML = "You have ordered " + localStorage.getItem('orderCount') + " smoothies so far.";
+else {
+  document.getElementById('order-count').innerHTML = "You have ordered " + 0 + " smoothies so far.";
+}
